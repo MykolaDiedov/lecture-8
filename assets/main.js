@@ -7,7 +7,7 @@ var person = {
 function getValues(object) {
     var personValues = [];
    for (key in object) {
-       personValues.push(person[key]);
+       personValues.push(object[key]);
    } return personValues;
 }
 
@@ -34,7 +34,7 @@ console.log(getKeys(person));
 function getEntries (object) {
     var personEntries = [];
     for (key in object) {
-        personEntries.push(['0: ' + key + ' ' + '1: ' + person[key]]);
+        personEntries.push(['0: ' + key + ' ' + '1: ' + object[key]]);
        } return personEntries;
 }
 console.log(getEntries(person));
